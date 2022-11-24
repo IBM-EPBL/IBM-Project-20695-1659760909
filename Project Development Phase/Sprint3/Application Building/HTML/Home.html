@@ -1,12 +1,10 @@
-
-
 <!DOCTYPE html>
-<html >
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> Plant Disease Prediction</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease Prediction</title>
   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
@@ -15,6 +13,7 @@
 <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
 <style>
 .header {	
 			top:0;	
@@ -27,7 +26,7 @@
 			box-shadow: 0px 8px 4px grey;
 			overflow: hidden;
 			padding-left:20px;
-			font-family: 'Josefin Sans';
+			font-family:cursive;
 			font-size: 2vw;
 			width: 100%;
 			height:8%;
@@ -48,7 +47,7 @@
 }
 
 .topnav-right a:hover {
-  background-color: #ddd;
+  background-color: rgb(196, 13, 13);
   color: black;
 }
 
@@ -64,7 +63,7 @@
 
 body {
 
-  background-color:#ffffff;
+  background-color:aliceblue;
   background-repeat: no-repeat;
   background-size:cover;
   background-position: 0px 0px;
@@ -117,7 +116,8 @@ button:hover {
 
 .imgcontainer {
   text-align: center;
-  margin: 24px 0 12px 0;
+  margin: 100px 0 10px 0;
+  /* margin-top: 80px; */
 }
 
 img.avatar {
@@ -232,26 +232,31 @@ img {vertical-align: middle;}
 <body style="font-family:'Times New Roman', Times, serif;background-color:#C2C5A8;">
 
 <div class="header">    
- <div style="width:50%;float:left;font-size:2vw;text-align:left;color:white; padding-top:1%">Plant Disease Prediction</div>
-  <div class="topnav-right"style="padding-top:0.5%;">
+ <div style="width:50%;float:left;font-size:1;text-align:left;color:white; padding-top:1%;margin-top: -5px;">Plant Disease Prediction</div>
+  <div class="topnav-right"style="padding-top:0.5%; margin-top:-5px;">
     
     <a class="active" href="{{ url_for('home')}}">Home</a>
-    <a href="/Predict" class="button">Predict</button></a>
+    <a href="file:///C:/Users/ELCOT/Pictures/Project%20Development%20Phase/Sprint3/Application%20Building/HTML/predict.html" class="button">Predict</button></a>
   </div>
 </div>
 
 <div style="background-color:#ffffff;">
-<div style="width:60%;float:left;">
-<div style="font-size:50px;font-family:Montserrat;padding-left:20px;text-align:center;padding-top:10%;">
+<div style="width:60%;float:left; margin-top: -50px;">
+<div style="font-size:50px;font-family:cursive;padding-left:20px;margin-top: -20px;; text-align:center;padding-top:10%;">
 <b>Detect if your plant<br> is infected!!</b></div><br>
-<div style="font-size:20px;font-family:Montserrat;padding-left:70px;padding-right:30px;text-align:justify;">Agriculture was the essential development in the rise of human 
-  civilization, whereby farming of acclimatize species produced food oversupply that enabled people to reside in cities.
-  Plants were independently sophisticated in at least 11 regions of the world. Industrial agriculture based on large-scale monocropping in the twentieth century came to influence agricultural output, though 
-  about 2 billion people still depended on maintaining agriculture.The plant diseases effect the production. Identification of diseases and taking necessary precautions is all done through naked eye, which requires labour and laboratries. This application helps farmers in detecting the diseases by observing the spots on the leaves, which inturn saves effort and labor costs.</div><br><br>
+<div style="font-size:25px; font-family:cursive; padding-left:70px;padding-right:30px;text-align:justify;"> Now a day’s agriculture is very important for life and helps
+  to save the healthy environment around as. Doing agriculture is the
+  most hard in current scenario because lot of natural disaster are
+  happening day-to-day our life. Maximun of the plants are affected by
+  many disease due to pollution in water, gas, soil. Identifying the
+  disease is one of the huge hurtles in agriculture. Most of the plants are
+  affected by leaf disease and its hard to find to correct fertilizer to cure.
+  Identifying the disease in early stage is very important and easy to
+  cure that.</div><br><br>
 </div>
 </div>
-<div style="width:40%;float:right;"><br><br>
-<img src="https://images.pexels.com/photos/35196/water-plant-green-fine-layers.jpg" style="max-height:100%;max-width:100%;">
+<div style="width:40%;float:right; margin-top: 90px;"><br><br>
+<img src="C:\Users\ELCOT\Videos\Data Collection\Dataset Plant Disease\veggies-dataset\test\lady fingur healthy and disease\nature pic.jpg" height="350px" width="auto">
 
 </div>
 </div>
@@ -265,7 +270,6 @@ img {vertical-align: middle;}
 <script>
 var slideIndex = 0;
 showSlides();
-
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("mySlides");
