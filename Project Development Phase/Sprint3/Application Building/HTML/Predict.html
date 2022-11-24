@@ -5,38 +5,53 @@
 </head>
 
 <style>
-    .container{
+    .image{
         display: flex;
         padding: 60px 70px 60px 70px;
+    
     }
+    /* image:hover{
+        border
+
+        transition: height 5s width 5s;
+    } */
     .card{
         padding: 70px 80px 70px 80px;
+        margin-top: -80px;
+        color:rebeccapurple;
+
     }
     .menu{
         padding: 10px 10px 10px 10px;
-        background-color: black;
-        color: white;
-        font-size: 15pt;
+        background-color:black;
+        color:aqua;
+        font-size: 25px;
+        font-family: cursive;
+        
+    }
+    body{
+        background-color: antiquewhite;
     }
 </style>
 <body>
     <div class="menu">
-        <ul ><li>Plant disease Prediction</li></ul></div>
-    <div class="container">
+        <p align="center">Plant disease Prediction</p></div>
+    <div class="image">
     
-        <img src="C:\Users\chana\OneDrive\Documents\c\Screenshot 2022-11-09 182944.jpg">
+        <img src="C:\Users\ELCOT\Videos\Data Collection\Dataset Plant Disease\veggies-dataset\test\lady fingur healthy and disease\crop.jpg" height="400px" width="auto">
         <div class="card">
         <form>
             <h1>Drop in the image to get the Prediction </h1><br><br>
-            <label><select name="Fruit" id="plant">
+            <labe><select name="data collection" id="plant">
                 <option value="fruit" id="fruit">Fruit</option>
-                <option value="vagitable" id="vig">vegitable</option>
+                <option value="vegetable" id="veg">vegetable</option>
+                <option value="crop" id="crop">crop</option>
                 </select>
-            </label><br><br><br>
-            <input  id="default-btn" type="file" name="" onchange="document.getElementById('output').src=window.URL.createObjectURL(this.files[0])"><br><br><br>
-            <img src="" id="output">
+            </label><br><br>
+            <input  id="default-btn" type="file" name="choose an file" onchange="document.getElementById('output').src=window.URL.createObjectURL(this.files[0])"><br><br><br>
+            <img src="" id="output" height="200px" width="200">
             
-            <br><button id="button" onclick ="display()" >Predict!</button></br>
+            <br><br><button id="button" onclick ="display()" ><b>Predict!</b></button><br><br>Black rot is caused by the fungus Diplodia seriata (syn Botryosphaeria obtusa). The fungus can infect dead tissue as well as living trunks, branches, leaves and fruits. The black rot fungi survive Minnesota winters in branch cankers and mummified fruit (shriveled and dried fruit) attached to the tree.</br>
 
             
 
@@ -46,4 +61,3 @@
     
 </body>
 </html>
-Footer
